@@ -8,6 +8,7 @@ import PortalNewsDetail from '@/views/portal/NewsDetail.vue'
 import PortalDeals from '@/views/portal/Deals.vue'
 import PortalGameDetail from '@/views/portal/GameDetail.vue'
 import PortalAuth from '@/views/portal/Auth.vue'
+import PortalAuthCallback from '@/views/portal/AuthCallback.vue'
 import PortalLogin from '@/views/portal/Login.vue'
 import PortalOrder from '@/views/portal/Order.vue'
 import PortalProfile from '@/views/portal/Profile.vue'
@@ -50,6 +51,11 @@ const routes: RouteRecordRaw[] = [
     path: '/auth',
     name: 'auth',
     component: PortalAuth,
+  },
+  {
+    path: '/auth/callback',
+    name: 'auth-callback',
+    component: PortalAuthCallback,
   },
   {
     path: '/login',
